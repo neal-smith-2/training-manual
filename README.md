@@ -26,9 +26,7 @@ These manuals are designed to be generated using [docsify](https://docsify.js.or
 4. Click **Save**.
 5. Return to the GitHub Pages section of Settings, and you'll receive the URL of your published manual.
 
-** Now trying to use reviewer function.
-
-## Make changes
+## Make changes that come from Merge 2
 
 The official [docsify documentation](https://docsify.js.org/#/?id=docsify) is your best bet for getting up to speed with the tool.
 
