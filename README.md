@@ -26,9 +26,10 @@ These manuals are designed to be generated using [docsify](https://docsify.js.or
 4. Click **Save**.
 5. Return to the GitHub Pages section of Settings, and you'll receive the URL of your published manual.
 
-** Now trying to use merge 2.  Or 3?
 
-## Make changes Is sthis still merge2?
+** Not reviewing now, creating changes to conflict with merges.
+## Make changes  Like a change from merge conflict 1 and Merge 2 And merge 2 again.  Which is 3.
+
 
 The official [docsify documentation](https://docsify.js.org/#/?id=docsify) is your best bet for getting up to speed with the tool.
 
