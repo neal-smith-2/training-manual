@@ -30,5 +30,5 @@ jobs:
             echo "| Dirs   | $DIRECTORIES |"
             echo "| Bytes  | $BYTES | "
             echo ""
-            echo "_Measured at commit \`${GITHUB_SHA::7}\`._"
+            echo "_Measured at commit \`${GITHUB_SHA:0:7}\`._"
           } >> "$GITHUB_STEP_SUMMARY
