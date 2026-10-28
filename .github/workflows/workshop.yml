@@ -10,13 +10,12 @@ jobs:
   explore:
     runs-on: ubuntu-latest
     steps:
-      #uses: calls a marketplace action to clone repo
+      # uses: calls a marketplace action to clone repo
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Explore the repo
         run:
-          echo "Runner directory: $PWD"
+          # echo "Runner directory: $PWD"
           echo "Repo files:"
           find . -maxdepth 2 -type f | sort
-          
