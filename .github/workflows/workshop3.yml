@@ -1,0 +1,34 @@
+name: GitHub Actions Workshop exercise 3
+
+on: 
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      # uses: calls a marketplace action to clone repo
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Calc and upb metrics
+        shell: bash
+        run: |
+          FILES=$(find . -path './.git' -prune -o -type f -print | wc -l)
+          DIRECTORIES=$(find . -path './.git' -prune -o -type d -print | wc -l)
+          BYTES=$(du -sb --exclude=.git . | cut -f1)
+
+          {
+            echo "# Repository metrics"
+            echo ""
+            echo "| Metric | Value |"
+            echo "| ------ | ----- |"
+            echo "| Files  | $FILES |"
+            echo "| Dirs   | $DIRECTORIES |"
+            echo "| Bytes  | $BYTES | "
+            echo ""
+            echo "_Measured at commit \`${GITHUB_SHA::7}\`._"
+          } >> "$GITHUB_STEP_SUMMARY
